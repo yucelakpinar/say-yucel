@@ -2,9 +2,11 @@
   "name": "say-yucel",
   "version": "1.0.5-rc.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/yucelakpinar/say-yucel/issues"
   },
-  "homepage": "https://github.com/yucelakpinar/say-yucel#readme"
+  "homepage": "https://github.com/yucelakpinar/say-yucel#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "typescript": "^2.9.2"
+  }
 }
